@@ -23,9 +23,9 @@ SELECT FORMAT(123456.789, 0) AS '포맷숫자';
 -- DATE_FORMAT(날짜, 형식)
 -- 오늘 날짜를 2025년 04월 30일 12시 00분 00초 형식으로 출력
 SELECT DATE_FORMAT(NOW(), '%Y년%m월%d일 %H시%i분%s초') '현재 날짜시간'
-      ,DATE_FORMAT(NOW(), '%Y/%m/%d/ %H:%i:%s:') '현재 날짜시간'
-      ,DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%s:') '현재 날짜시간'
-      ,DATE_FORMAT(NOW(), '%Y.%m.%d. %H:%i:%s:') '현재 날짜시간'
-      ,STR_TO_DATE( '2025-04-30 12:34:56', '%Y-%m-%d %H:%i:%s:') '문자->날짜'
+      ,DATE_FORMAT(NOW(), '%Y/%m/%d/ %H:%i:%s') '현재 날짜시간'
+      ,DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%s') '현재 날짜시간'
+      ,DATE_FORMAT(NOW(), '%Y.%m.%d. %H:%i:%s') '현재 날짜시간'
+      ,STR_TO_DATE( '2025-04-30 12:34:56', '%Y-%m-%d %H:%i:%s') '문자->날짜'
       ,STR_TO_DATE( '2025년04월30일 12시34분56초', '%Y년%m월%d일 %H시%i분%s초')'문자->날짜'
       ,STR_TO_DATE( '2025.04.30 12:34:56', '%Y.%m.%d %H:%i:%s')'문자->날짜';
