@@ -1,3 +1,4 @@
+USE employees;
 -- 사원 수 구하기
 SELECT COUNT(*) AS '사원 수'
 FROM employees;
